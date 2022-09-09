@@ -21,6 +21,7 @@ public class SpringJenkinsApplication {
 	public void init() {
 		log.info("------------------------------");
 		log.info("Testing application for jenkins.");
+		log.info("Specially for jenkins purpose !!!!");
 		log.info("Service Starterd at : {}", new Date());
 	}
 }
