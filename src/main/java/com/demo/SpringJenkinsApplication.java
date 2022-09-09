@@ -20,8 +20,7 @@ public class SpringJenkinsApplication {
 	@PostConstruct
 	public void init() {
 		log.info("------------------------------");
-		log.info("------------------------------");
-		log.info("------------------------------");
+		log.info("Testing application for jenkins.");
 		log.info("Service Starterd at : {}", new Date());
 	}
 }
