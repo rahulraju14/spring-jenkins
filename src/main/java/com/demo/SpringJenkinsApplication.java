@@ -1,27 +1,17 @@
 package com.demo;
 
-import java.util.Date;
-
-import javax.annotation.PostConstruct;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class SpringJenkinsApplication {
+public class SpringJenkinsApplication extends SpringBootServletInitializer {
 	
 	Logger log = LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 	}
 
-	@PostConstruct
-	public void init() {
-		log.info("------------------------------");
-		log.info("Testing application for jenkins.");
-		log.info("Specially for jenkins purpose !!!!");
-		log.info("Service Starterd at : {}", new Date());
-	}
 }
